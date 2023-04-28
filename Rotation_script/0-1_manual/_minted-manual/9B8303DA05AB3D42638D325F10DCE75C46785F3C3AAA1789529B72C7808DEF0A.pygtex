@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+!chkname
+\PYGZpc{}mem=20GB
+\PYGZpc{}nprocshared=16
+\PYGZsh{} opt B3LYP/6\PYGZhy{}31g(d,p) scrf=iefpcm
+
+!jobname
+
+0 1
+\end{Verbatim}

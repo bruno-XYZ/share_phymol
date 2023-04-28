@@ -1,0 +1,263 @@
+\documentclass[parskip]{scrartcl}
+%\usepackage{xcolor}
+%\definecolor{bgcol}{rgb}{0.7,0.7,0.75}
+\usepackage{minted}
+\usemintedstyle{native}
+%\setminted{bgcolor=bgcol}
+
+%% Write dihed file from ang_def file
+
+\newcommand\help{(}
+
+\title{\Large Documentation for the coordinate transformation script}
+\date{\normalsize Version from \today}
+\author{\normalsize Author: Bruno von Brüning (\texttt{bruno.vonbruning@student.kuleuven.be})}
+
+\begin{document}\maketitle
+
+\section{Informations}
+
+    \subsection{Problem}
+        If a property of a molecule depends on the conformation of this molecule, multiple
+        minima have to be considered.
+        To find these minima multiple starting geometries have to be created to find 
+        all the possible minima. Depending on the molecule and the geometries to be considered
+        , i.e. different dihedrals angles a multitude of structures may have to be genereated.
+        Such displacement like change of dihedral will be called \textit{operations} in the
+        following. 
+        This can be a tedious and error-prone labor. The author provides a script that
+        mostly automizes this process to enable you an easier and more efficient work flow.
+        At the moment the script is limited to rotation around dihedrals but is designed to
+        feature more operations. Please contact the author if you want to propose extension of
+        the current script.
+        Except the manual notation of the operations and values to be considered the user of
+        this script will face the minimal work of executing this script and submitting
+        calculations to his or her cluster.
+
+    \subsection{Structure of the script}
+        The main purpose of the provided code is to rotate a molecule around dihedral angles 
+        in order to obtain input structures for subsequent quantum-mechanical calculations.
+        More transformations like changing the conformation could be implemented in the future
+        for interest in this please contact the author
+        (\texttt{bruno.vonbruening@student.kuleuven.be}).
+        Next to this main feature a upstream script to permute through possible combinations 
+        of angle values is provided, the resulting combination of multiple operations is
+        called transformation job. The script generates job file where the operations for the
+        multiple displacement to be executed are saved (\texttt{transformation file}). 
+        Find more information about this script in section \ref{op-sec}.
+
+        The subsequent main script performs the transformations provided in the 
+        \texttt{transformation file} on coordinates of a
+        molecule coordinated provided in example in a \texttt{.xyz} file. The script outputs
+        all the resulting structures as coordinate files or input files for computational
+        chemsitry software. At the moment only \texttt{Gaussian} input format is supported.
+        Please contact the author if other input formats may be implemented.
+        Find more information about this scipt in section \ref{main-sec}
+
+        The resulting calculations can be automatically evaluated by the 
+        \texttt{evaluate\_output\_script}. Resulting angles, energy and dipolemoment are read
+        out and either written in a \texttt{.csv} or a \texttt{.txt} format. Identical
+        resulting can conformations are indentified by the same resulting angles. 
+        Currently only \texttt{Gausssian} \texttt{.log}
+        files can be read. Please contact the author if you desire other formats to be read.
+
+    \subsection{Technical information and tipps}
+        The three provided script are saved in individual folders. Modules are shared between
+        these scripts and saved in the folder \texttt{modules}. The scripts access these
+        modules by a relative path, hence please do not change the level of the
+        \texttt{module} folder or also change the relative path in the scripts.
+        A help entry for all of the following python scripts can be called
+        by calling the respective
+        funtion with the option \texttt{-h}.
+        \begin{minted}{bash}
+        ./script_[...] -h
+        \end{minted}
+
+
+
+\section{Generate the operation file}
+    \subsection{Usage}
+        The script \texttt{script\_ang-to-op.py} takes a \texttt{input} file with 
+        the definition of    the possible operations and
+        values and writes all the possible combintations of these values in an 
+        \texttt{output} file. By default the name of the output file while be name of the
+        inputfile truncated at te extension or the occurence of \texttt{\_ang} and get the
+        ending \texttt{\_op.txt} appended.
+
+        \begin{minted}{bash}
+        ./script_ang-to-op.py [INPUTFILE]
+        \end{minted}
+
+        Following further options can be chosen
+
+        \begin{tabular}{lll}
+        Options & Purpose & example
+            \\\texttt{-ofilename}     & Name for the outputfile to be generated
+            & \texttt{my\_output\_file.txt}
+        \end{tabular}
+    \subsection{Inputfile format}
+        The format of the \texttt{input}-file goes in the following order:
+
+        \def\lenone{0.5\textwidth}%
+        \def\lentwo{0.3\textwidth}%
+        \begin{tabular}{lll}
+            Entry & Description & Example
+            \\\hline Comments
+                &\parbox[t]{\lenone}{
+                comments are indicated with "!" or "!!"
+                \vspace{.5\baselineskip}
+                }
+                & \texttt{[command] ! [comment]}
+            \\\hline First line
+                &\parbox[t]{\lenone}{
+                a range of atoms for example \texttt{\{1,...,5,10,..13,17,..20\}} where 
+                \texttt{-} indicates ranges and \texttt{,} a list
+                \vspace{.5\baselineskip}
+                }
+                & \texttt{1-5,10-13,17-20}
+            \\\hline Second line
+                &\parbox[t]{\lenone}{
+                First a operation type (\texttt{ROT} or \texttt{FIX} for fixing atoms for the optimization (givin
+                the \texttt{-1} as parameter)). Then separated by a
+                space the following option are given.\\
+                \texttt{ROT} takes four numbers for the labels of the atoms in the dihedral of interest\\
+                \texttt{FIX} takes a list of atoms in the same format as above.
+                \vspace{.5\baselineskip}
+                }
+                &
+                \parbox[t]{\lentwo}{\texttt{ROT 2,3,4,5} \\ \texttt{FIX 30-40,50-60}
+                }
+            \\\hline(Third line)
+                &\parbox[t]{\lenone}{
+                \texttt{FIX} option: blank or omitted\\
+                \texttt{ROT} option: values of desired angles of dihedral as a list, prefix of \texttt{pm} if plus
+                and minus these values are desired
+                \vspace{.5\baselineskip}
+                }
+                &\parbox[t]{\lentwo}{
+                For \texttt{ROT}:  \texttt{pm 15,75} or \texttt{180}
+                }
+            \\\hline Separation line
+                &\parbox[t]{\lenone}{
+                Between different entries there has to be an empty line (empty before possibly
+                comments)}
+                &\parbox[t]{\lentwo}{
+                \texttt{"  \textbackslash n"}, \texttt{" ![!] [...]\textbackslash n"}
+                }
+        \end{tabular}
+
+        An arbitrary number of these objects these objects can be included in the program in
+        arbitrary order. An example can be found in \ref{def_file}
+        
+        \begin{listing}
+        \caption{Format of inputfile for operation file generation\label{def_file}}
+            \begin{minted}{text}
+            !! angle alpha
+            204-219
+            ROT 3,2,204,205
+            pm 15
+
+            !! angle beta
+            214-219
+            EXC
+
+            [...]
+            \end{minted}
+        \end{listing}
+    \subsection{Format of operations file \label{op}}
+
+    The ordering of the operations in the operations file will impact the filename that will
+    be produced.
+
+    Operations are  
+
+    The entries are separated by blank lines. The first and last line do not have 
+    to be a blank line.
+    Notably lines with only comments also account as blank lines.
+
+\section{Generate the \texttt{Gaussian} input files}
+    \subsection{Purpose}
+        The script reads the operation from the the operations file (see \ref{op}) and performs
+        these operations on the coordinates provided within a molecule coordinate file. 
+        Either input files or molecule
+        coordinate files can chosen to be generated (first need a further file with the head of
+        the calculation as furthe input, the body file). These files will be named according t
+        the
+        corresponding values given in the operations file and saved within an own folder. The
+        folder will get 
+    \subsection{Usage}
+        The Displacment of the coordinates requires a file with input coordinates 
+        (at the moment only \texttt{.pdb} format) 
+        and the file containing the operations (See subsection \ref{op}).
+        Furthermore, a body file is required
+        if \texttt{.com} files are to be generated (find exmpale in listing \ref{hfile}.
+        %Further options can be found in table \ref{Gen_in}.
+        The basic execution and further options can be found below.
+        \begin{minted}{bash}
+            ./script_displacement [molecule.pdb] [operations.txt]
+        \end{minted}
+            \begin{tabular}{lll}
+                Options & Purpose & example
+                \\\texttt{-oformat}     & outputformat of transfomred coordinates
+                & \texttt{XYZ}, \texttt{PDB}, \texttt{COM}(Default)
+                \\\texttt{-oname}         & stem for folder and filenames to be used
+                & \texttt{}
+                \\\texttt{-bfile}       & headerfile, required to generate \texttt{.com} files
+                & \texttt{body\_file.txt}
+            \end{tabular}
+
+    \subsection{\texttt{-oformat}: Output format}
+    The format of the coordinates to be printed can be chosen with the option \texttt{-oformat}.
+    Current accepted values are \texttt{XYZ}, \texttt{PDB}, \texttt{COM} that correspond
+    respectively to \texttt{.xyz}, \texttt{.pdb}, and \texttt{.com} format.
+    If the \texttt{.com} format is chosen a body file has to be provided by envoking the option
+    \texttt{-bfile}. 
+
+    \subsection{\texttt{-bfile}: body file}
+    To obtain input files for \texttt{Gaussian} a body with informations for this calculation has to
+    be provided to which the calculated coordinates are going to be appended.
+    An example of such a headerfile is provided in listing \ref{hfile}.
+    Lines starting with \texttt{!} will be recognized to be replaced with information corresponding
+    to the current file. The flag \texttt{!chkname} will be replaced with the specific filename.
+    The flag \texttt{!jobname} will be replaced with with the filename without the file extension.
+    Following is an example for such a header file.
+    \begin{listing}
+    \caption{Example of a body file\label{hfile}}
+    \inputminted{text}{listing_sources/header_file.txt}
+    \end{listing}
+
+
+    \subsection{\texttt{-oname}: Outputfile name}
+    The stem -- the first part of the names of the following files -- 
+    can be determined with the option
+    \texttt{-oname}. The default is the filename of the input file cut after the first occurence of
+    a \texttt{.} character. In example, an input filename like \texttt{[path]/molecule.pdb}
+    would give the default stem \texttt{molecule}.
+    A folder for the output files is created with the name of the \texttt{stem} and appended
+    \texttt{\_\{oformat\}}, where the outputfiles are saved. 
+    The outputfiles themselves will be named
+    by the \textit{stem} and the appendices \texttt{\_\{values\}} for all the values given for this
+    operation in ordering of the outputfile. The file extension is the same as \texttt{omode}. For
+    example, with the \textit{stem} molecule and provided values 90, 180 and the chosen outut format
+    \texttt{.xyz} will lead to the filename \texttt{molecule\_90\_180.xyz}. 
+    Notably, these values are
+    casted to integers if float are given inside the operations file.
+
+\section{Utilities}
+    \subsection{\texttt{chk\_copy.sh} script}
+        This script transfers checkpoint files from a provided folder to the present working
+        directory where the \texttt{.com} files building up on these \texttt{.chk} files may
+        be saved. 
+        The name of the \texttt{.com} files is truncated after
+        given regular expression and matched with the \texttt{.chk} files. 
+        In example, giving the script \texttt{B3} as second option will let the
+        script search for the \texttt{Mol\_0\_90\_15\_B3LYP.com} 
+        for a file matching \texttt{Mol\_0\_90\_15*.chk*} in the folder provided in the first
+        argument. This file is then copied to the present working directory and given the name
+        \texttt{Mol\_0\_90\_15\_B3LYP.chk}
+        \begin{minted}{bash}
+            ./chk_copy.sh [PATH_to_.chk_files] [string_to_cut_before]
+        \end{minted}
+\clearpage\section{Evaluate the \texttt{Gaussian} output files}
+    
+\end{document}

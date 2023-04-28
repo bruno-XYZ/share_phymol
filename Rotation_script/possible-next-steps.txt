@@ -1,0 +1,7 @@
+make dihedrals file automatically
+
+recognize C2V C1 symmetry
+
+check ordering, represntation of evaluation
+
+make parameter file for general options (like make _1... for files)
