@@ -16,7 +16,7 @@ int main(){
 	for(int i=1; i<isize; i ++){
 		fprintf	(fp, 	"\\begin\{minipage}{%.2lf\\textwidth} \n ", rowlength);
 		fprintf	(fptwo, 	"\\begin\{minipage}{%.2lf\\textwidth} \n ", rowlength);
-		for(int j=0; j<jsize; j++){
+		for(int j=1; j<jsize; j++){
 			
 			sprintf(filename, "../plots_size-distribution_png/plot_size-distribution_eagg%d-ki%d__xi.png", i ,j);
 			
