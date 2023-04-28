@@ -1,8 +1,0 @@
-!chkname
-%mem=20GB
-%nprocshared=16
-# opt B3LYP/6-31g(d,p) scrf=iefpcm
-
-!jobname
-
-0 1

@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-            ./script\PYGZus{}displacement \PYG{o}{[}molecule.pdb\PYG{o}{]} \PYG{o}{[}operations.txt\PYG{o}{]}
-\end{Verbatim}

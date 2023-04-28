@@ -1,8 +1,0 @@
-!chkname
-%mem=20GB
-%nprocshared=16
-# opt td=(triplets,nstates=10,root=1) B3LYP/6-31g(d,p) Geom=Checkpoint Guess=Read
-
-!jobname
-
-0 1

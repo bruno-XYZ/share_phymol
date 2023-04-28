@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-            ./chk\PYGZus{}copy.sh \PYG{o}{[}PATH\PYGZus{}to\PYGZus{}.chk\PYGZus{}files\PYG{o}{]} \PYG{o}{[}string\PYGZus{}to\PYGZus{}cut\PYGZus{}before\PYG{o}{]}
-\end{Verbatim}
