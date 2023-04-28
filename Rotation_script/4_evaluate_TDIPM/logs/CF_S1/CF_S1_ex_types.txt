@@ -1,0 +1,10 @@
+1 LE+CT
+2 CT
+3 CT
+4 CT
+5 CT
+6 LE+CT
+7 CT+LE
+8 CT(+LE)
+9 CT(+LE)
+10 CT(+LE)

@@ -1,0 +1,4 @@
+for i in `ls -d */`; do cd $i ; mkdir ${i%/}_tex ; cp *tex ${i%/}_tex; cd ..; done
+
+for i in `ls -d C*/`; do cd $i; ../../script_evaluate_latex_out.py ${i%/};  cd ..; done
+

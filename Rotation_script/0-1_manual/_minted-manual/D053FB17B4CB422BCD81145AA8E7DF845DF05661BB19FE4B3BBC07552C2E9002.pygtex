@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+./make\PYGZus{}operation\PYGZus{}file.py input output
+\end{Verbatim}

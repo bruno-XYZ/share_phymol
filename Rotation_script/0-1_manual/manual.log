@@ -1,0 +1,461 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.8.16)  26 AUG 2022 16:52
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**manual.tex
+(./manual.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2021/11/13 v3.35 KOMA-Script document class (article)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2021/11/13 v3.35 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2021/11/13 v3.35 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2021/11/13 v3.35 KOMA-Script package (file load hooks)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2021/11/13 v3.35 KOMA-Script package (using LaTeX hooks)
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2021/11/13 v3.35 KOMA-Script package (logo)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 368.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2021/11/13 v3.35 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box50
+)
+Package tocbasic Info: babel extension for `toc' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 135.
+Class scrartcl Info: File `scrsize11pt.clo' used instead of
+(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 224
+2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2021/11/13 v3.35 KOMA-Script font size class option (11pt
+)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2021/11/13 v3.35 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count181
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1743.
+)
+\c@part=\count182
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\scr@dte@section@maxnumwidth=\skip53
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 4852.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 4852.
+\scr@dte@part@maxnumwidth=\skip54
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 4860.
+\scr@dte@subsection@maxnumwidth=\skip55
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 4870.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 4870.
+\scr@dte@subsubsection@maxnumwidth=\skip56
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 4880.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 4880.
+\scr@dte@paragraph@maxnumwidth=\skip57
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 4891.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 4891.
+\scr@dte@subparagraph@maxnumwidth=\skip58
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 4901.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 4901.
+\abovecaptionskip=\skip59
+\belowcaptionskip=\skip60
+\c@pti@nb@sid@b@x=\box51
+Package tocbasic Info: babel extension for `lof' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6076.
+
+\scr@dte@figure@maxnumwidth=\skip61
+\c@figure=\count188
+Package tocbasic Info: babel extension for `lot' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6091.
+
+\scr@dte@table@maxnumwidth=\skip62
+\c@table=\count189
+Class scrartcl Info: Redefining `\numberline' on input line 6258.
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2021/12/24 v2.6 Yet another Pygments shim for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count190
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
+\FV@CodeLineNo=\count191
+\FV@InFile=\read2
+\FV@TabBox=\box52
+\c@FancyVerbLine=\count192
+\FV@StepNumber=\count193
+\FV@OutFile=\write3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+\linenopenalty=\count194
+\output=\toks17
+\linenoprevgraf=\count195
+\linenumbersep=\dimen139
+\linenumberwidth=\dimen140
+\c@linenumber=\count196
+\c@pagewiselinenumber=\count197
+\c@LN@truepage=\count198
+\c@internallinenumber=\count199
+\c@internallinenumbers=\count266
+\quotelinenumbersep=\dimen141
+\bframerule=\dimen142
+\bframesep=\dimen143
+\bframebox=\box53
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count267
+\c@FV@TrueTabCounter=\count268
+\FV@TabBox@Group=\box54
+\FV@TmpLength=\skip63
+\c@FV@HighlightLinesStart=\count269
+\c@FV@HighlightLinesStop=\count270
+\FV@LoopCount=\count271
+\FV@NCharsBox=\box55
+\FV@BreakIndent=\dimen144
+\FV@BreakIndentNChars=\count272
+\FV@BreakSymbolSepLeft=\dimen145
+\FV@BreakSymbolSepLeftNChars=\count273
+\FV@BreakSymbolSepRight=\dimen146
+\FV@BreakSymbolSepRightNChars=\count274
+\FV@BreakSymbolIndentLeft=\dimen147
+\FV@BreakSymbolIndentLeftNChars=\count275
+\FV@BreakSymbolIndentRight=\dimen148
+\FV@BreakSymbolIndentRightNChars=\count276
+\c@FancyVerbLineBreakLast=\count277
+\FV@LineBox=\box56
+\FV@LineIndentBox=\box57
+\FV@LineWidth=\dimen149
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count278
+\calc@Bcount=\count279
+\calc@Adimen=\dimen150
+\calc@Bdimen=\dimen151
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count280
+\calc@Cskip=\skip66
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "manual.w18")...executed.
+
+ (./manual.w18)
+runsystem(rm -- "manual.w18")...executed.
+
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count281
+\decimalpart=\count282
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip67
+\fb@frw=\dimen152
+\fb@frh=\dimen153
+\FrameRule=\dimen154
+\FrameSep=\dimen155
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count283
+\float@exts=\toks18
+\float@box=\box58
+\@float@everytoks=\toks19
+\@floatcapt=\box59
+)
+\minted@appexistsfile=\read3
+\minted@bgbox=\box60
+\minted@code=\write4
+\c@minted@FancyVerbLineTemp=\count284
+\c@minted@pygmentizecounter=\count285
+\@float@every@listing=\toks20
+\c@listing=\count286
+)
+runsystem(mkdir -p _minted-manual)...executed.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 227.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+runsystem(which pygmentize && touch manual.aex)...executed.
+
+runsystem(rm manual.aex)...executed.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2022-01-12 L3 backend support: XeTeX
+
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count287
+\l__color_backend_stack_int=\count288
+\g__color_backend_stack_int=\count289
+\g__graphics_track_int=\count290
+\l__pdf_internal_box=\box61
+\g__pdf_backend_object_int=\count291
+\g__pdf_backend_annotation_int=\count292
+\g__pdf_backend_link_int=\count293
+) (./manual.aux)
+\openout1 = `manual.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+6.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+Package scrbase Info: activating english \contentsname on input line 16.
+Package scrbase Info: activating english \listfigurename on input line 16.
+Package scrbase Info: activating english \listtablename on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 17.
+
+
+LaTeX Warning: Reference `op-sec' on page 1 undefined on input line 47.
+
+
+LaTeX Warning: Reference `main-sec' on page 1 undefined on input line 55.
+
+
+Overfull \hbox (6.81247pt too wide) in paragraph at lines 49--56
+[]\TU/lmr/m/n/10.95 The subsequent main script performs the transformations pro
+vided in the \TU/lmtt/m/n/10.95 transformation
+ []
+
+[1
+
+
+]
+Overfull \hbox (14.67456pt too wide) in paragraph at lines 57--63
+[]\TU/lmr/m/n/10.95 The resulting calculations can be automatically evaluated b
+y the \TU/lmtt/m/n/10.95 evaluate_output_script\TU/lmr/m/n/10.95 .
+ []
+
+\openout3 = `manual.pyg'.
+
+(./_minted-manual/native.pygstyle)
+(./_minted-manual/F09480CC0300BCBE1E4A5F8F97E72CDE35738EAB8E5FC893D505BA9BFFFB5
+BD0.pygtex)
+\openout3 = `manual.pyg'.
+
+
+(./_minted-manual/55EAFB83E23F4FFCFD1330BA4AB274EE35738EAB8E5FC893D505BA9BFFFB5
+BD0.pygtex)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 93.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 93.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 93.
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]\TU/lmr/m/n/10.95 a range of atoms for example
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+\TU/lmtt/m/n/10.95 {1,...,5,10,..13,17,..20} \TU/lmr/m/n/10.95 where \TU/lmtt/m
+/n/10.95 -
+ []
+
+
+Overfull \hbox (35.13219pt too wide) in paragraph at lines 103--148
+[][] 
+ []
+
+\openout3 = `manual.pyg'.
+
+
+(./_minted-manual/A9BBEF4A5EFF4550115512ED888596E63B3F9253B4A00104432DA43D864C8
+7C4.pygtex) [3]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 178.
+\openout3 = `manual.pyg'.
+
+
+(./_minted-manual/FB42CCF1D80DF50EE7AE590CCCAADA1F35738EAB8E5FC893D505BA9BFFFB5
+BD0.pygtex)
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 209.
+ [4]
+(./_minted-manual/9B8303DA05AB3D42638D325F10DCE75C46785F3C3AAA1789529B72C7808DE
+F0A.pygtex)
+\openout3 = `manual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-manual/7BD39C516191EEF621557E9B29A50B8235738EAB8E5FC893D5
+05BA9BFFFB5BD0.pygtex manual.pyg)...executed.
+
+
+(./_minted-manual/7BD39C516191EEF621557E9B29A50B8235738EAB8E5FC893D505BA9BFFFB5
+BD0.pygtex [5]) [6]
+runsystem(rm _minted-manual/B570A2468F5606B7D8A326C61D480DFB35738EAB8E5FC893D50
+5BA9BFFFB5BD0.pygtex)...executed.
+
+ [7
+
+] (./manual.aux)
+
+LaTeX Warning: There were undefined references.
+
+runsystem(rm manual.pyg)...executed.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 7972 strings out of 476191
+ 173106 string characters out of 5812072
+ 636498 words of memory out of 5000000
+ 28602 multiletter control sequences out of 15000+600000
+ 473007 words of font info for 52 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 108i,9n,106p,10620b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on manual.pdf (7 pages).

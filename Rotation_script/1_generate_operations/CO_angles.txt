@@ -1,0 +1,28 @@
+!! angle alpha
+204-219
+ROT 3,2,204,205
+pm 15
+
+!! angle beta
+214-219
+ROT 207,211,214,215
+0
+
+!! angle gamma
+20-65
+ROT 12,13,20,21
+pm 15           
+
+!! angle delta
+30-65
+ROT 23,27,30,46
+pm 15,165
+
+!! angle epsilon
+47-57
+ROT 30,45,47,49
+90
+
+!Fix
+81-203
+FIX
