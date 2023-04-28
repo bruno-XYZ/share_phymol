@@ -10,7 +10,9 @@ This is the program of my Bachelor project made in spring 2021.
   The program code-size_var_M1.c solves the micelle distribution dictated by thermodynamic equations(feeding in concentration of monomer to then obtain global concentration). In secondary steps the distributions are plotted and then combined with tex to the final TEX/standalone-size.pdf.
 User input giving the range of parameters to be explored is given in the main function.
 
-  The algorithm is found in header/header-distribution_SERIES.h. A bissection algorithm is employed to solve (x-f(x)==0) where f is the sum over the distribution calculated by the boltzman distribution. The relative Free Energy is determined in the module /header/header-distribution_FREE-ENERGY-FRUST.h based on frustration potentials according to the packing parameter model.
+  The algorithm is found in header/header-distribution_SERIES.h. A bissection algorithm is employed to solve (x-f(x)==0) where f is the sum over the distribution calculated by the boltzman distribution. The relative Free Energy is determined in the module header/header-distribution_FREE-ENERGY-FRUST.h based on frustration potentials according to the packing parameter model.
+  
+  In case something should not work well you can also find the resulting plots in the tar repository of the project in TEX/standalone-size.pdf.
 
   If I would do the script now again I would definitely read user input from a file and use Pyplot instead of gnuplot.
 
